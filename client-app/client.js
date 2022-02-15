@@ -1,9 +1,9 @@
-var socketServerUrl = "https://yourapp.herokuapp.com";
-var hostToLive = "http://localhost:port";
+var socketServerUrl = "https://yourapp.herokuapp.com"; //heroku app url
+var hostToLive = "http://localhost:port"; //port to be used in server
 
 var socket = require('socket.io-client')(socketServerUrl);
 const superagent = require('superagent');
-console.log("App Started");
+console.log("App Started"); //log after start
 
 socket.on('connect',function(){
     console.log("Connected succesfully");

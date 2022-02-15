@@ -40,7 +40,7 @@ io.on('connection', (socket) => {
     })
 })
 
-var server_port = process.env.YOUR_PORT || process.env.PORT || 3000;
+var server_port = process.env.YOUR_PORT || process.env.PORT || 3000; //server port on heroku
 http.listen(server_port, () => {
     console.log('listening on *:' + server_port);
 })
